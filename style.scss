@@ -1,0 +1,184 @@
+/*
+Theme Name: CJC Theme
+Theme URI:
+Author: Curly Themes
+Author URI:
+Description: Child Theme for Jet One Theme
+Version: 1
+Template: jet-one
+
+*/
+
+
+.cjc-super-header{
+  position: relative;
+  margin: -1rem 0 0 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.15;
+    transition: opacity 100ms ease-in;
+    border-top: 1px solid currentcolor;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul{
+    display: flex;
+    margin: 0 -1rem;
+  }
+
+  .cjc-side-item{
+    margin-left: auto;
+  }
+  .cjc-label{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 120ms ease;
+  }
+  .cjc-super-header-link, .cjc-super-header-link:visited{
+    color: white;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 120ms ease;
+  }
+  .cjc-super-header-link:hover{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+
+    .cjc-label{
+      width: auto;
+      height: auto;
+    }
+  }
+  .cjc-icon-link{
+    position: relative;
+    display: inline-flex;
+    transition: all 120ms ease;
+    padding: 0.5rem 12px;
+    text-transform: none;
+
+    > span:first-child{
+      margin-right: 0.25rem
+    }
+  }
+
+  .cjc-icon-link{
+    &--phone:hover{
+      background-color: red;
+      color: white;
+    }
+    &--email:hover{
+      background-color: red;
+      color: white;
+    }
+    &--whatsapp:hover{
+      background-color: hsl(118, 51%, 52%);
+      color: white;
+    }
+    &--li:hover{
+      background-color: hsl(199, 100%, 36%);
+      color: white;
+    }
+    &--fb:hover{
+      background-color: hsl(221, 44%, 42%);
+      color: white;
+    }
+    &--ig:hover{
+      background-color: hsl(206, 43%, 42%);
+      color: white;
+    }
+    &--tw:hover{
+      background-color: hsl(206, 81%, 63%);
+      color: white;
+    }
+  }
+
+  .switcher{
+    font-size: inherit;
+    line-height: inherit;
+
+    .option{
+      position: absolute;
+    }
+    .selected{
+      background: transparent;
+      font-size: inherit;
+
+      a{
+        border: none;
+        color: white;
+        font-size: inherit;
+        padding: 0.5rem 1rem;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover{
+          background: transparent;
+        }
+
+        &::after{
+          height: auto;
+        }
+      }
+      img{
+        display: block;
+        height: 15px;
+        width: auto;
+        margin-right: 8px;
+        aspect-ratio: none;
+      }
+    }
+  }
+}
+
+.switcher-popup{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  line-height: 17px;
+
+  &:hover{
+    text-decoration: none;
+  }
+
+  span:nth-child(2){
+    display: none;
+  }
+  span:nth-child(3){
+    color: white !important;
+    margin-left: 5px;
+  }
+  img{
+    max-width: 16px;
+  }
+}
+
+#gt_lightbox{
+  img{
+    max-width: 24px;
+  }
+  a, a:hover{
+    text-decoration: none;
+  }
+}
