@@ -130,4 +130,7 @@ Template: jet-one
 #gt_lightbox a, #gt_lightbox a:hover {
   text-decoration: none; }
 
+.nf-field-element select {
+  background-image: none !important; }
+
 /*# sourceMappingURL=style.css.map */

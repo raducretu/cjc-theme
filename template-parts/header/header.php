@@ -2,8 +2,8 @@
 	<div class="cjc-super-header">
 		<div class="container-fluid">
             <ul>
-                <li><a class="cjc-super-header-link" href="#">FAQ</a></li>
-                <li><a class="cjc-super-header-link" href="#">Contact us</a></li>
+                <li class="d-none d-lg-block"><a class="cjc-super-header-link" href="#">FAQ</a></li>
+                <li class="d-none d-lg-block"><a class="cjc-super-header-link" href="#">Contact us</a></li>
                 <?php if( shortcode_exists('gtranslate') ) : ?><li><?php echo do_shortcode('[gtranslate]'); ?></li><?php endif; ?>
                 <li class="cjc-side-item"><a class="cjc-super-header-link cjc-icon-link cjc-icon-link--phone" href="#"><span class="fas fa-phone fa-fw"></span><span class="cjc-label">+40 728 111 728</span></a></li>
                 <li><a class="cjc-super-header-link cjc-icon-link cjc-icon-link--email" href="#"><span class="fas fa-envelope fa-fw"></span><span class="cjc-label">office@cjc.com</span></a></li>
